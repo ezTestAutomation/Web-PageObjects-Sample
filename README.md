@@ -10,7 +10,9 @@ Required libraries
   3.2. On Windows: go to Environment Variables, include the path of chrome driver to system path variable
   
 4. How to run:
+
   4.1 Indiviual class: select test clases from "suites" package right-click and Run As---> TestNG Test
+  
   4.2 All test cases: select testng.xml, right-click and Run As ---> TestNG Test
   
 5. Report: Browse index.html file from test-output folder to view the result  
