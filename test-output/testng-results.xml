@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14066" started-at="2016-12-26T01:44:27Z" finished-at="2016-12-26T01:44:42Z">
+  <suite name="Default suite" duration-ms="31028" started-at="2016-12-26T02:41:47Z" finished-at="2016-12-26T02:42:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14066" started-at="2016-12-26T01:44:27Z" finished-at="2016-12-26T01:44:42Z">
-      <class name="facebookmessage.suites.FacebookMessage">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:facebookmessage.suites.FacebookMessage@6cc4c815]" name="beforeTest" is-config="true" duration-ms="2805" started-at="2016-12-26T08:44:27Z" finished-at="2016-12-26T08:44:30Z">
+    <test name="Default test" duration-ms="31028" started-at="2016-12-26T02:41:47Z" finished-at="2016-12-26T02:42:18Z">
+      <class name="wallethub.suites.WalletHubReview">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:wallethub.suites.WalletHubReview@6cc4c815]" name="beforeTest" is-config="true" duration-ms="8651" started-at="2016-12-26T09:41:47Z" finished-at="2016-12-26T09:41:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="postAFacebookMessage()[pri:0, instance:facebookmessage.suites.FacebookMessage@6cc4c815]" name="postAFacebookMessage" duration-ms="11130" started-at="2016-12-26T08:44:30Z" finished-at="2016-12-26T08:44:41Z">
+        <test-method status="PASS" signature="WalletHubReviewVerify()[pri:0, instance:wallethub.suites.WalletHubReview@6cc4c815]" name="WalletHubReviewVerify" duration-ms="22244" started-at="2016-12-26T09:41:55Z" finished-at="2016-12-26T09:42:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postAFacebookMessage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:facebookmessage.suites.FacebookMessage@6cc4c815]" name="afterTest" is-config="true" duration-ms="119" started-at="2016-12-26T08:44:41Z" finished-at="2016-12-26T08:44:42Z">
+        </test-method> <!-- WalletHubReviewVerify -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:wallethub.suites.WalletHubReview@6cc4c815]" name="afterTest" is-config="true" duration-ms="121" started-at="2016-12-26T09:42:18Z" finished-at="2016-12-26T09:42:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- facebookmessage.suites.FacebookMessage -->
+      </class> <!-- wallethub.suites.WalletHubReview -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

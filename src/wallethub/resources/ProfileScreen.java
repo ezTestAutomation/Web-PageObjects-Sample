@@ -65,7 +65,9 @@ public class ProfileScreen {
 	public void verifyActivity(String message){
 		WebElement currentMessageElement = new WebDriverWait(driver, timeOut).until(ExpectedConditions.presenceOfElementLocated(By.xpath(PROFILE_MESSAGE)));
 		String currentMessage = currentMessageElement.getText();
-		currentMessage = currentMessage.replace("…Show more", "");
+		currentMessage = currentMessage.replace("ï¿½Show more", "");
+		currentMessage = currentMessage.replace("â€¦Show more","");
+		System.out.println(currentMessage);
 		Assert.assertTrue(message.contains(currentMessage));
 	}
 	
