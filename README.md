@@ -11,8 +11,10 @@ Required libraries
   
 4. How to run:
 
-  4.1 Indiviual class: select test clases from "suites" package right-click and Run As---> TestNG Test
+  4.1 Check the repo and open with Eclipse (remember to install from all steps above)
   
-  4.2 All test cases: select testng.xml, right-click and Run As ---> TestNG Test
+  4.2 Indiviual class: select test clases from "suites" package right-click and Run As---> TestNG Test
+  
+  4.3 All test cases: select testng.xml, right-click and Run As ---> TestNG Test
   
 5. Report: Browse index.html file from test-output folder to view the result  
