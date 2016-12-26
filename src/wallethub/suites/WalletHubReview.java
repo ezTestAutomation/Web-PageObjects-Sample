@@ -102,7 +102,9 @@ public class WalletHubReview {
 	@AfterTest
 	public void afterTest() {
 		System.out.println("\nClosing browser...");
-		driver.close();
+		//driver.close();
+		webDriver.closeBrowser(true);
+		
 	}
 	
 	private String parsingProfileURL(String emailAddress){

@@ -1,5 +1,14 @@
 package config;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -42,6 +51,22 @@ public class WebDriverManagement {
 	}
 
 	public void takeAScreenshot(){
+		TakesScreenshot screenshot = (TakesScreenshot)driver;
+		File source = screenshot.getScreenshotAs(OutputType.FILE);
+		String screenshotPath = System.getProperty("user.dir") + "/src/screenshots/";
+		
+		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+		Date date = new Date();
+	
+		String filename = dateFormat.format(date).toString() + ".png";
+
+		try {
+			FileUtils.copyFile(source, new File(screenshotPath + filename));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
 		
 	}
 
@@ -49,7 +74,7 @@ public class WebDriverManagement {
 		try {
 			if (takingScreenshotIfTestFailed == true){
 				System.out.println("Taking screenshot...");
-				System.out.println("Not implemented!!!");
+				takeAScreenshot();
 			}
 		} finally {
 			System.out.println("Closing browser...");
