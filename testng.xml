@@ -3,12 +3,12 @@
 <suite name="WalletHubDemo">
   <test name="FacebookMessage">
     <classes>
-      <class name="facebookmessage.FacebookMessage"/>
+      <class name="facebookmessage.suites.FacebookMessage"/>
     </classes>
   </test> <!-- FacebookMessage -->
   <test name="WalletHubReview">
     <classes>
-      <class name="wallethub.WalletHubReview"/>
+      <class name="wallethub.suites.WalletHubReview"/>
     </classes>
   </test>
 </suite> <!-- WalletHubDemo -->
