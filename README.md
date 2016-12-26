@@ -7,4 +7,4 @@ Required libraries
 
   3.1. On Mac: put chrome webdriver file to /usr/bin
   
-  3.2. On Window: go to Environment Variables, include the path of chrome driver to Path variable
+  3.2. On Windows: go to Environment Variables, include the path of chrome driver to system path variable
