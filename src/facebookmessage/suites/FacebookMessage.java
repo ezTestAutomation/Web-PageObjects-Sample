@@ -11,6 +11,8 @@ import org.testng.annotations.BeforeTest;
 import java.io.IOException;
 import java.util.Map;
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 
 
@@ -76,9 +78,15 @@ public class FacebookMessage {
 		home = new HomeScreen(driver, timeOut);
 	}
 
-	@AfterTest
-	public void afterTest() {
-		webDriver.closeBrowser(false);
+	@AfterMethod
+	public void afterMethod(ITestResult result) {
+		if(result.getStatus()==ITestResult.FAILURE){
+			   webDriver.takeAScreenshot();
+			   webDriver.closeBrowser();
+
+		}else		
+		webDriver.closeBrowser();
+		
 	}
 	
 }

@@ -15,7 +15,10 @@ import java.io.IOException;
 
 import java.util.Map;
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 
 
 public class WalletHubReview {
@@ -69,7 +72,7 @@ public class WalletHubReview {
 	
 	
 	
-	@BeforeTest
+	@BeforeMethod
 	public void beforeTest() {
 		ConfigurationManagement config = new ConfigurationManagement();
 		Map<String, String> configHashMap = null;
@@ -99,11 +102,14 @@ public class WalletHubReview {
 
 	
 	
-	@AfterTest
-	public void afterTest() {
-		System.out.println("\nClosing browser...");
-		//driver.close();
-		webDriver.closeBrowser(true);
+	@AfterMethod
+	public void afterMethod(ITestResult result) {
+		if(result.getStatus()==ITestResult.FAILURE){
+			   webDriver.takeAScreenshot();
+			   webDriver.closeBrowser();
+
+		}else		
+		webDriver.closeBrowser();
 		
 	}
 	

@@ -6,8 +6,8 @@
       <class name="wallethub.suites.WalletHubReview">
         <methods>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="WalletHubReviewVerify"/>
-          <include name="afterTest"/>
         </methods>
       </class> <!-- wallethub.suites.WalletHubReview -->
     </classes>

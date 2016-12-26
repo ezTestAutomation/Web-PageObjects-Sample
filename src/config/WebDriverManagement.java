@@ -70,17 +70,11 @@ public class WebDriverManagement {
 		
 	}
 
-	public void closeBrowser(boolean takingScreenshotIfTestFailed){
-		try {
-			if (takingScreenshotIfTestFailed == true){
-				System.out.println("Taking screenshot...");
-				takeAScreenshot();
-			}
-		} finally {
+	public void closeBrowser(){
+		
 			System.out.println("Closing browser...");
 			driver.close();
 		}
-	}
 
 	public void navigateTo(String url){
 		driver.navigate().to(url);
