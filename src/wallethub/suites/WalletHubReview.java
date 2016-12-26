@@ -3,10 +3,10 @@ package wallethub.suites;
 import org.testng.annotations.Test;
 
 import config.ConfigurationManagement;
+import config.WebDriverManagement;
 import wallethub.resources.ProfileScreen;
 import wallethub.resources.ReviewScreen;
 import wallethub.resources.SignInScreen;
-import wallethub.resources.WebDriverManagement;
 
 import org.testng.annotations.BeforeTest;
 

@@ -3,9 +3,10 @@ package facebookmessage.suites;
 import org.testng.annotations.Test;
 
 import config.ConfigurationManagement;
+import config.WebDriverManagement;
 import facebookmessage.resources.HomeScreen;
 import facebookmessage.resources.LogInScreen;
-import wallethub.resources.WebDriverManagement;
+
 import org.testng.annotations.BeforeTest;
 import java.io.IOException;
 import java.util.Map;

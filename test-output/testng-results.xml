@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[Error: Timed out after 10 seconds waiting for text to be "". Current text: "Hello World"
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'NguyenPT.local', ip: '192.168.1.108', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.2', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.26.436421 (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6), userDataDir=/var/folders/6z/mccc4kfs52z0dhf0jbpn9zk0vyjjjh/T/.org.chromium.Chromium.nVAwUE}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.95, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 49e828faaf93f7dd5d397a78158bc252]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31028" started-at="2016-12-26T02:41:47Z" finished-at="2016-12-26T02:42:18Z">
+  <suite name="WalletHubDemo" duration-ms="63111" started-at="2016-12-26T02:48:56Z" finished-at="2016-12-26T02:50:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31028" started-at="2016-12-26T02:41:47Z" finished-at="2016-12-26T02:42:18Z">
-      <class name="wallethub.suites.WalletHubReview">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:wallethub.suites.WalletHubReview@6cc4c815]" name="beforeTest" is-config="true" duration-ms="8651" started-at="2016-12-26T09:41:47Z" finished-at="2016-12-26T09:41:55Z">
+    <test name="FacebookMessage" duration-ms="28660" started-at="2016-12-26T02:48:56Z" finished-at="2016-12-26T02:49:25Z">
+      <class name="facebookmessage.suites.FacebookMessage">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:facebookmessage.suites.FacebookMessage@100fc185]" name="beforeTest" is-config="true" duration-ms="4667" started-at="2016-12-26T09:48:56Z" finished-at="2016-12-26T09:49:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="WalletHubReviewVerify()[pri:0, instance:wallethub.suites.WalletHubReview@6cc4c815]" name="WalletHubReviewVerify" duration-ms="22244" started-at="2016-12-26T09:41:55Z" finished-at="2016-12-26T09:42:18Z">
+        <test-method status="PASS" signature="postAFacebookMessage()[pri:0, instance:facebookmessage.suites.FacebookMessage@100fc185]" name="postAFacebookMessage" duration-ms="23873" started-at="2016-12-26T09:49:01Z" finished-at="2016-12-26T09:49:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Error: Timed out after 10 seconds waiting for text to be "". Current text: "Hello World"
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'NguyenPT.local', ip: '192.168.1.108', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.2', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.26.436421 (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6), userDataDir=/var/folders/6z/mccc4kfs52z0dhf0jbpn9zk0vyjjjh/T/.org.chromium.Chromium.nVAwUE}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.95, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 49e828faaf93f7dd5d397a78158bc252]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postAFacebookMessage -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:facebookmessage.suites.FacebookMessage@100fc185]" name="afterTest" is-config="true" duration-ms="107" started-at="2016-12-26T09:49:25Z" finished-at="2016-12-26T09:49:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- facebookmessage.suites.FacebookMessage -->
+    </test> <!-- FacebookMessage -->
+    <test name="WalletHubReview" duration-ms="34422" started-at="2016-12-26T02:49:25Z" finished-at="2016-12-26T02:50:00Z">
+      <class name="wallethub.suites.WalletHubReview">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:wallethub.suites.WalletHubReview@1593948d]" name="beforeTest" is-config="true" duration-ms="10491" started-at="2016-12-26T09:49:25Z" finished-at="2016-12-26T09:49:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="WalletHubReviewVerify()[pri:0, instance:wallethub.suites.WalletHubReview@1593948d]" name="WalletHubReviewVerify" duration-ms="23807" started-at="2016-12-26T09:49:36Z" finished-at="2016-12-26T09:49:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WalletHubReviewVerify -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:wallethub.suites.WalletHubReview@6cc4c815]" name="afterTest" is-config="true" duration-ms="121" started-at="2016-12-26T09:42:18Z" finished-at="2016-12-26T09:42:18Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:wallethub.suites.WalletHubReview@1593948d]" name="afterTest" is-config="true" duration-ms="121" started-at="2016-12-26T09:49:59Z" finished-at="2016-12-26T09:50:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- wallethub.suites.WalletHubReview -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- WalletHubReview -->
+  </suite> <!-- WalletHubDemo -->
 </testng-results>
