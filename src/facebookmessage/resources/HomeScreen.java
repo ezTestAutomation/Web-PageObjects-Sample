@@ -36,17 +36,13 @@ public class HomeScreen {
 			Assert.assertEquals(currentText, message);
 		} catch (Exception e) {
 			Reporter.log("Error: " + e.getLocalizedMessage());
-			// System.out.println(e);
+		
 		}
 	}
 
 	public void verifyCurrentScreenIsHomeScreen() {
 		new WebDriverWait(driver, timeOut)
 				.until(ExpectedConditions.presenceOfElementLocated(By.xpath(HOME_MESSAGEPANEL_MESSAGE_UNSELECTED)));
-		// new WebDriverWait(driver,
-		// timeOut).until(ExpectedConditions.presenceOfElementLocated(By.xpath(HOME_MESSAGEPANEL_MESSAGE)));
-		// new WebDriverWait(driver,
-		// timeOut).until(ExpectedConditions.presenceOfElementLocated(By.xpath(HOME_MESSAGEPANEL_POST)));
 	}
 
 	public void invokeMessage() {
