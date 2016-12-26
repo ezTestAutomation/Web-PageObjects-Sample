@@ -11,7 +11,7 @@ Required libraries
   
 4. How to run:
 
-  4.1 Check the repo and open with Eclipse (remember to install from all steps above)
+  4.1 Checkout the repo and open with Eclipse (remember to install from all steps above)
   
   4.2 Indiviual class: select test clases from "suites" package right-click and Run As---> TestNG Test
   
