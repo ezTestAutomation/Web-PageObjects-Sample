@@ -19,12 +19,12 @@ import org.testng.Reporter;
 
 public class WebDriverManagement {
 	private WebDriver driver = null;
+
 	public WebDriverManagement(WebDriver driver) {
 		this.driver = driver;
 	}
-	
-	
-	public WebDriver startWebDriverInstance(String url, String browserType){
+
+	public WebDriver startWebDriverInstance(String url, String browserType) {
 		switch (browserType) {
 		case "gc":
 			driver = new ChromeDriver();
@@ -43,21 +43,21 @@ public class WebDriverManagement {
 			Assert.assertFalse(false);
 			break;
 		}
-		
+
 		driver.manage().window().maximize();
 		driver.get(url);
-		
+
 		return driver;
 	}
 
-	public void takeAScreenshot(){
-		TakesScreenshot screenshot = (TakesScreenshot)driver;
+	public void takeAScreenshot() {
+		TakesScreenshot screenshot = (TakesScreenshot) driver;
 		File source = screenshot.getScreenshotAs(OutputType.FILE);
 		String screenshotPath = System.getProperty("user.dir") + "/src/screenshots/";
-		
+
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
 		Date date = new Date();
-	
+
 		String filename = dateFormat.format(date).toString() + ".png";
 
 		try {
@@ -65,20 +65,17 @@ public class WebDriverManagement {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		
-		
+
 	}
 
-	public void closeBrowser(){
-		
-			System.out.println("Closing browser...");
-			driver.close();
-		}
+	public void closeBrowser() {
 
-	public void navigateTo(String url){
+		System.out.println("Closing browser...");
+		driver.close();
+	}
+
+	public void navigateTo(String url) {
 		driver.navigate().to(url);
 	}
-
 
 }

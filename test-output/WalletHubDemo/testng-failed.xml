@@ -6,14 +6,14 @@
       <class name="facebookmessage.suites.FacebookMessage">
         <methods>
           <include name="beforeTest"/>
-          <include name="afterTest"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- facebookmessage.suites.FacebookMessage -->
       <class name="wallethub.suites.WalletHubReview">
         <methods>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="WalletHubReviewVerify"/>
-          <include name="afterTest"/>
         </methods>
       </class> <!-- wallethub.suites.WalletHubReview -->
     </classes>

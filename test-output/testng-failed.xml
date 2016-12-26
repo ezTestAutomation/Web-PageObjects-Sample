@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [WalletHubDemo]">
+  <test name="WalletHubReview(failed)">
     <classes>
+      <class name="facebookmessage.suites.FacebookMessage">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- facebookmessage.suites.FacebookMessage -->
       <class name="wallethub.suites.WalletHubReview">
         <methods>
           <include name="beforeTest"/>
@@ -11,5 +17,5 @@
         </methods>
       </class> <!-- wallethub.suites.WalletHubReview -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- WalletHubReview(failed) -->
+</suite> <!-- Failed suite [WalletHubDemo] -->
