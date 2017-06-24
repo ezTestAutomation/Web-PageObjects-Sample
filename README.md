@@ -1,4 +1,4 @@
-# WalletHubDemo
+# Web-Page Objects-Demo
 Required libraries
 
 1. Eclipse Java EE IDE for Web Developers (version: Neon.1a Release (4.6.1)
